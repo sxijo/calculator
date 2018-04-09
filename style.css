@@ -1,0 +1,65 @@
+:root{
+  text-align: center;
+
+    font-family: 'Cabin Sketch', cursive;
+  --background: #262626;
+  --color: #b3001b;
+  --hype: #ccad8f;
+  --accent: #255c99;
+  --shadow: #7ea3cc;
+}
+
+body{
+  display: flex;
+  height: 100vh;
+      background: var(--hype)
+}
+
+.container{
+    height: 406px;
+    width: 296px;
+    padding: 10px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 25px 80px 48px 48px 48px 48px 48px;
+    grid-gap: 10px;
+    color: var(--background);
+    background: var(--color);
+    background-color:
+}
+
+div{
+  border: 1px solid black;
+  color: var(--accent)
+}
+.btn{
+  background: black;
+  color: #fff;
+  border-radius: 20%;
+  vertical-align: middle;
+  text-align: center;
+  line-height: auto;
+}
+.btn:hover{
+  color: gold;
+
+  opacity: 0.5px;
+}
+#heading{
+  color: var(--shadow);
+  grid-column: span 4;
+  text-align: center;
+}
+#screen{
+  background: var(--hype);
+  grid-column: span 4;
+  height: 80px;
+  border-radius: 10%;
+}
+#equals{
+  grid-row: span 2;
+}
+#zero{
+  grid-column: span 2;
+}
