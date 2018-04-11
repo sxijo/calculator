@@ -1,7 +1,5 @@
-:root{
-  text-align: center;
-
-    font-family: 'Cabin Sketch', cursive;
+:root {
+  font-family: 'Cabin Sketch', cursive;
   --background: #262626;
   --color: #b3001b;
   --hype: #ccad8f;
@@ -9,57 +7,91 @@
   --shadow: #7ea3cc;
 }
 
-body{
+body {
   display: flex;
   height: 100vh;
-      background: var(--hype)
+  background: var(--hype);
+  text-align: center;
 }
 
-.container{
-    height: 406px;
-    width: 296px;
-    padding: 10px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 25px 80px 48px 48px 48px 48px 48px;
-    grid-gap: 10px;
-    color: var(--background);
-    background: var(--color);
-    background-color:
+.container {
+  height: 406px;
+  width: 296px;
+  padding: 15px;
+  text-align: center;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  color: var(--background);
+  background: var(--color);
+  background-color: var(--accent);
 }
 
-div{
-  border: 1px solid black;
-  color: var(--accent)
-}
-.btn{
-  background: black;
+.btn {
+  background: var(--color);
   color: #fff;
   border-radius: 20%;
   vertical-align: middle;
   text-align: center;
-  line-height: auto;
+  line-height: 44px;
+  font-size: 20px;
 }
-.btn:hover{
-  color: gold;
 
-  opacity: 0.5px;
+.btn:hover {
+  color: gold;
+  background: var(--background);
+  cursor: pointer;
 }
-#heading{
-  color: var(--shadow);
+
+.opp {
+  background: var(--color);
+  color: #fff;
+  border-radius: 20%;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 44px;
+}
+
+.opp:hover {
+  color: gold;
+  background: var(--background);
+  cursor: pointer;
+}
+
+#heading {
   grid-column: span 4;
   text-align: center;
+  background: grey;
+  color: #fff;
+  box-shadow: 0.5px 0.5px 0.5px;
+  border: 0.5px dotted red;
 }
-#screen{
-  background: var(--hype);
+
+#screen {
+  background: #fff;
   grid-column: span 4;
-  height: 80px;
   border-radius: 10%;
+  text-align: right;
+  height: 30px;
+  padding: 10px;
 }
-#equals{
+
+.clear {
+  background: black;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  padding: inherit;
+}
+
+#equals {
   grid-row: span 2;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 100px;
 }
-#zero{
+
+#zero {
   grid-column: span 2;
 }
